@@ -1,4 +1,4 @@
-package main.java;
+package com.bigdata.app;
 
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
@@ -14,7 +14,7 @@ public class SparkDataSetOperationsForCsv {
                 .config("spark.some.config.option", "some-value")
                 .getOrCreate();
 
-        Dataset<Row>  appleStockDataSet = spark.read().format("csv").option("header",true).option("inferSchema",true).load("D:\\SparkBasicsJavaAndScala\\com\\bigdata\\app\\src\\main\\resources\\appl_stock.csv");
+        Dataset<Row>  appleStockDataSet = spark.read().format("csv").option("header",true).option("inferSchema",true).load("D:\\SparkBasicsJavaAndScala\\src\\main\\resources\\appl_stock.csv");
         appleStockDataSet.show();
     }
 }

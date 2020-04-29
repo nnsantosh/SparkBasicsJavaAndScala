@@ -1,4 +1,4 @@
-package main.scala
+package com.bigdata.app
 
 import org.apache.spark.sql.SparkSession
 
@@ -10,7 +10,7 @@ object SparkScalaDataSetOperationsForCsv {
     val applDataSet = spark.read.format("csv")
       .option("header", "true")
       .option("inferSchema", "true")
-      .load("D:\\SparkBasicsJavaAndScala\\com\\bigdata\\app\\src\\main\\resources\\appl_stock.csv")
+      .load("D:\\SparkBasicsJavaAndScala\\src\\main\\resources\\appl_stock.csv")
 
     applDataSet.show()
     applDataSet.printSchema()
