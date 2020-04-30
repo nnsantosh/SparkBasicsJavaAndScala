@@ -1,0 +1,3 @@
+{"id": 1, "name":"Michael", "age" : 30, "designation":"Software Engineer", "salary": 20000, "zipCode" : 90503}
+{"id": 2, "name":"John", "age" : 32, "designation":"Senior Software Engineer", "salary": 25000, "zipCode" : 94588}
+{"id": 3, "name":"Shawn", "age" : 34, "designation":"Technology Architect", "salary": 30000, "zipCode" : 90502}
